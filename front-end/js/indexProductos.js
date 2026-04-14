@@ -81,55 +81,229 @@ async function cargarProductos() {
             
             // Productos de demostración como último recurso
             const productosDemostracion = [
+                // Deportes
                 {
                     id: 1,
-                    name: 'Balón de fútbol profesional',
+                    name: 'Raqueta de Tenis Wilson Blade 100L V9',
                     category: 'Deportes',
-                    description: 'Balón de fútbol de alta calidad para profesionales',
-                    price: 120000,
-                    stock: 50,
-                    mainImage: 'https://via.placeholder.com/300x300?text=Balón+de+fútbol',
+                    description: 'La opción preferida de los competidores ávidos que buscan el máximo control, sensación y estabilidad.',
+                    price: 1357990,
+                    stock: 5,
+                    mainImage: 'https://i.postimg.cc/0NGdy2rZ/HV-Producto-6-1.jpg',
                     additionalImages: [
-                        'https://via.placeholder.com/300x300?text=Balón+1',
-                        'https://via.placeholder.com/300x300?text=Balón+2'
+                        'https://i.postimg.cc/wv65y8mz/HV-Producto-6-2.jpg',
+                        'https://i.postimg.cc/HnnQzwzP/HV-Producto-6-3.jpg'
                     ],
                     featured: true
                 },
+                {
+                    id: 5,
+                    name: 'Juego de tenis de mesa de tamaño mediano',
+                    category: 'Deportes',
+                    description: 'incluye una mesa de tenis de mesa de tamaño mediano de 6 pies x 3 pies con 2 paletas, red de juego y 4 pelotas.',
+                    price: 895000,
+                    stock: 6,
+                    mainImage: 'https://m.media-amazon.com/images/I/81+CSxrrzkL._AC_SX679_.jpg',
+                    additionalImages: [
+                        'https://m.media-amazon.com/images/I/818717-F3jL._AC_SX679_.jpg',
+                        'https://m.media-amazon.com/images/I/81WFs-Kyq6L._AC_SX679_.jpg'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 6,
+                    name: 'Kit Pesas Termoforradas 40kg',
+                    category: 'Deportes',
+                    description: 'El entrenamiento con pesas es uno de los deportes de fuerza más eficaces y bueno en el área de la salud y buen estado físico.',
+                    price: 229900,
+                    stock: 18,
+                    mainImage: 'https://res.cloudinary.com/diljcypxv/image/upload/q_auto/f_auto/v1749572419/hobbverse_products/kit-pesas-termoforradas-80lb-40kg-pesa-rusa-fitness-homesale-442178_ftqk4y.jpg',
+                    additionalImages: [
+                        'https://res.cloudinary.com/diljcypxv/image/upload/q_auto/f_auto/v1749572412/hobbverse_products/kit-pesas-mancuernas-80lb-40kg-home-sale-rusas-termoforradas-pesas-y-accesorios-homesale-302619_kuifhf.jpg'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 7,
+                    name: 'Caminadora Portátil 2 En 1',
+                    category: 'Deportes',
+                    description: 'Nuestra pequeña caminadora está diseñada para adaptarse a tu estilo de vida en el trabajo y en casa.',
+                    price: 2350000,
+                    stock: 25,
+                    mainImage: 'https://http2.mlstatic.com/D_NQ_NP_850312-MCO76623936603_052024-O.webp',
+                    additionalImages: [
+                        'https://http2.mlstatic.com/D_NQ_NP_952749-MCO76623946167_052024-O.webp'
+                                           
+                    ],
+                    featured: true
+                },
+                // Arte
                 {
                     id: 2,
-                    name: 'Set de pintura al óleo',
+                    name: 'Esrich Juego De Lienzo De Pintura Acrlica, Kit',
                     category: 'Arte',
-                    description: 'Kit completo de pintura al óleo con 24 colores y pinceles',
-                    price: 85000,
+                    description: 'El Kit contiene un juego de pintura más completo para adultos y niños, es perfecto todos los niveles desde principiante.',
+                    price: 196300,
                     stock: 30,
-                    mainImage: 'https://via.placeholder.com/300x300?text=Set+de+pintura',
-                    additionalImages: [],
-                    featured: true
-                },
-                {
-                    id: 3,
-                    name: 'Guitarra acústica',
-                    category: 'Música',
-                    description: 'Guitarra acústica de excelente calidad para principiantes y aficionados',
-                    price: 250000,
-                    stock: 15,
-                    mainImage: 'https://via.placeholder.com/300x300?text=Guitarra',
+                    mainImage: 'https://http2.mlstatic.com/D_NQ_NP_681230-MCO81525977280_012025-O.webp',
                     additionalImages: [
-                        'https://via.placeholder.com/300x300?text=Guitarra+1',
-                        'https://via.placeholder.com/300x300?text=Guitarra+2'
+                        'https://m.media-amazon.com/images/I/81OdFs8VU7L._AC_SX679_.jpg'
                     ],
                     featured: true
                 },
                 {
-                    id: 4,
-                    name: 'Juego de ajedrez premium',
-                    category: 'Juegos de mesa',
-                    description: 'Ajedrez de madera con piezas talladas a mano',
-                    price: 180000,
+                    id: 8,
+                    name: 'Prismacolor Premier Soft Core',
+                    category: 'Arte',
+                    description: 'Amplia gama de colores: disponible en un vibrante conjunto de 150 colores surtidos.',
+                    price: 580000,
+                    stock: 14,
+                    mainImage: 'https://m.media-amazon.com/images/I/91NTgzXx5mL._AC_SX466_.jpg',
+                    additionalImages: [
+                        'https://m.media-amazon.com/images/I/81ComN-3LdL._AC_SX466_.jpg',
+                        'https://m.media-amazon.com/images/I/91PIXiz-+5L._AC_SX466_.jpg'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 9,
+                    name: 'Tableta Digitalizadora Wacom',
+                    category: 'Arte',
+                    description: 'Modelo One. DTC-133W0A black y white. Expresividad en tus creaciones.',
+                    price: 1450000,
+                    stock: 40,
+                    mainImage: 'https://i.postimg.cc/Wz17KLN8/HV-Producto-3-1.png',
+                    additionalImages: [
+                        'https://i.postimg.cc/yxpTCQWH/HV-Producto-3-2.png',
+                        'https://i.postimg.cc/HxHzw8Ff/HV-Producto-3-3.png'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 10,
+                    name: 'Caballete De Madera Mediano Grafitos',
+                    category: 'Arte',
+                    description: 'Eleva tu arte a otro nivel con este caballete de madera super resistente y diseño ultra liviano.',
+                    price: 55000,
+                    stock: 12,
+                    mainImage: 'https://www.grafitos.com.co/wp-content/uploads/2024/03/caballete-de-madera-mediano-grafitos.jpg',
+                    additionalImages: [
+                        'https://www.grafitos.com.co/wp-content/uploads/2024/03/parte-trasera-del-caballete.jpg'
+                    ],
+                    featured: true
+                },
+                // Música
+                {
+                    id: 3,
+                    name: '1989 (Versión de Taylor)[2 LP]',
+                    category: 'Música',
+                    description: 'Portada del álbum coleccionable, con portada y contraportada exclusivas.',
+                    price: 136308,
+                    stock: 13,
+                    mainImage: 'https://i.postimg.cc/kg3bR30H/HV-Producto-4-1.png',
+                    additionalImages: [
+                        'https://i.postimg.cc/kGR2Dff9/HV-Producto-4-2.png',
+                        'https://i.postimg.cc/sXwY56Yh/HV-Producto-4-3.png'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 11,
+                    name: 'Teclado CASIO CT-S100',
+                    category: 'Música',
+                    description: 'Con el CT-S100, puedes disfrutar de la música en cualquier momento y lugar.',
+                    price: 568100,
+                    stock: 15,
+                    mainImage: 'https://www.miche.com.co/cdn/shop/files/CT-S100-galeria_4_942x503.jpg?v=1719675027',
+                    additionalImages: [
+                        'https://www.miche.com.co/cdn/shop/files/CT-S100-galeria_2_942x503.jpg?v=1719675027',
+                        'https://www.miche.com.co/cdn/shop/files/CT-S100-galeria_3_942x503.jpg?v=1719675027'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 12,
+                    name: 'Audífonos de Diadema SONY WH-CH520',
+                    category: 'Música',
+                    description: 'Disfruta de una gran calidad de sonido durante todo el día. Los Audífonos de diadema WH CH520 en color azul, mezclan un excelente balance entre confort y larga duración de batería',
+                    price: 179900,
                     stock: 10,
-                    mainImage: 'https://via.placeholder.com/300x300?text=Ajedrez',
-                    additionalImages: [],
-                    featured: false
+                    mainImage: 'https://www.alkosto.com/medias/027242925472-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMjA4MHxpbWFnZS93ZWJwfGFETTRMMmcxT0M4eE5ETTFNRFE1TkRFM01URTJOaTh3TWpjeU5ESTVNalUwTnpKZk1EQXhYemMxTUZkNE56VXdTQXw1NzljNTg0MGZiZmQyY2IyOTExMmU2M2E4MzY3ZTc5NDQ3NDY0ODkxMzRiNTE5NDRiYjg3YmM0ODhlNDViNmRl',
+                    additionalImages: [
+                        'https://www.alkosto.com/medias/027242925472-002-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMjgyNnxpbWFnZS93ZWJwfGFEZzBMMmcyT1M4eE5ETTFNRFE1TkRZNU5UUTFOQzh3TWpjeU5ESTVNalUwTnpKZk1EQXlYemMxTUZkNE56VXdTQXwxODBhNzBmYWNmMDg4NjdkOGI5OWM5ZWMyMDY4Y2RkNmE1ZmJhYjZhYzViMmMwNzM5YWM0NTA5NWZhMjE0NGQ1',
+                        'https://www.alkosto.com/medias/027242925472-003-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMTc4OHxpbWFnZS93ZWJwfGFHTmpMMmhqTkM4eE5ETTFNRFE1TlRJeE9UYzBNaTh3TWpjeU5ESTVNalUwTnpKZk1EQXpYemMxTUZkNE56VXdTQXwwYTM3ZDI0YjgxZmU4ZGRiZmQyOTZkYjk3MjFmNDdiMjJmNzQ1YzkxNjYwZWY5ODVkM2Y3ZWVlNmU1ODRiNzc1'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 13,
+                    name: 'Violin GREKO VBC-3 PPF',
+                    category: 'Música',
+                    description: 'Violín GREKO VCB-3 PPF de tamaño 4/4 con un hermoso acabado púrpura degrade que realza la belleza natural del instrumento musical.',
+                    price:  269900,
+                    stock: 9,
+                    mainImage: 'https://tiendadelmusico.com/24532-thickbox_default/greko-vbc-3-ppf-violin-con-estuche.jpg',
+                    additionalImages: [
+                        'https://tiendadelmusico.com/24535-thickbox_default/greko-vbc-3-ppf-violin-con-estuche.jpg',
+                        'https://tiendadelmusico.com/24533-thickbox_default/greko-vbc-3-ppf-violin-con-estuche.jpg'
+                    ],
+                    featured: true
+                },
+                // Crochet
+                {
+                    id: 4,
+                    name: 'Bolsa de Relleno Siliconado x 1 Kilo',
+                    category: 'Crochet',
+                    description: 'El relleno de algodón siliconado es la opción perfecta para quienes buscan añadir una textura suave, esponjosa y duradera a sus proyectos.',
+                    price: 130000,
+                    stock: 30,
+                    mainImage: 'https://casatextil.com.co/cdn/shop/files/Relleno_Siliconado_1_kilo.jpg?v=1736012162&width=700',
+                    additionalImages: [
+                        'https://casatextil.com.co/cdn/shop/files/Relleno_siliconado_1_kilo_2.jpg?v=1736012162&width=700'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 14,
+                    name: 'Bowser Amigurumi',
+                    category: 'Crochet',
+                    description: 'Hermoso amigurumi tejido a crochet en lana acrílica.',
+                    price: 160000,
+                    stock: 2,
+                    mainImage: 'https://i.postimg.cc/dVh6cJqh/Bowser-1.jpg',
+                    additionalImages: [
+                        'https://i.postimg.cc/GpYj9zTr/Bowser-2.jpg',
+                        'https://i.postimg.cc/cLPmsPHX/Bowser-3.jpg'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 15,
+                    name: 'Sabrina Carpenter Amigurumi',
+                    category: 'Crochet',
+                    description: 'Hermoso amigurumi tejido a crochet en lana acrílica. Versión Juno',
+                    price: 150000,
+                    stock: 1,
+                    mainImage: 'https://i.postimg.cc/Jhxm466M/264e307a-8557-403b-b757-0b7c24c12507.jpg',
+                    additionalImages: [
+                        'https://i.postimg.cc/bvg8NCCP/4ef5b8d4-4830-49d9-b9ea-0f167923044f.jpg',
+                        'https://i.postimg.cc/jjcKdggK/b82c6ec4-8c69-489a-8ff7-9c7f674ae3a2.jpg'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 16,
+                    name: 'Kit Agujas Crochet',
+                    category: 'Crochet',
+                    description: 'Este Kit ofrece una colección completa de herramientas perfecta tanto para principiantes como para tejerdores',
+                    price: 32900,
+                    stock: 42,
+                    mainImage: 'https://i.postimg.cc/rwx5fFGc/HV-Producto-8-1.png',
+                    additionalImages: [
+                        'https://i.postimg.cc/KYbBwSQT/HV-Producto-8-2.png',
+                        'https://i.postimg.cc/5tmLM7kR/HV-Producto-8-3.png'
+                    ],
+                    featured: true
                 }
             ];
             

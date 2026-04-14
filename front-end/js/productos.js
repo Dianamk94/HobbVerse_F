@@ -16,7 +16,7 @@ const categoryIcons = {
     "lectura": "bi-book",
     "deportes": "bi-person-walking",
     "música": "bi-music-note",
-    "pintura": "bi-palette",
+    "arte": "bi-palette",
     "videojuegos": "bi-controller",
     "peliculas": "bi-film",
     "crochet": "bi-scissors",
