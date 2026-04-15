@@ -385,8 +385,7 @@ function mostrarProductosDestacadosPorCategoria() {
         // Generar HTML para cada categoría
         const categoriasHTML = Object.entries(productosPorCategoria).map(([categoria, productos]) => `
             <div class="categoria-section mb-5">
-                <h3 class="categoria-title mb-4">
-                    <i class="bi bi-tag-fill me-2"></i>
+                <h3 class="categoria-title-categoria mb-4">                    
                     ${categoria ? (categoria.charAt(0).toUpperCase() + categoria.slice(1)) : 'Sin categoría'}
                 </h3>
                 <div class="row g-4">
@@ -420,7 +419,7 @@ function mostrarProductosDestacadosPorCategoria() {
                                             </button>
                                         ` : ''}
                                     </div>
-                                    <span class="badge bg-primary position-absolute top-0 start-0 m-3">
+                                    <span class="badge-cat position-absolute top-0 start-0 m-3">
                                         ${producto.category || 'Sin categoría'}
                                     </span>
                                 </div>
