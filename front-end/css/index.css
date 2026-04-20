@@ -262,8 +262,7 @@ body{
   
     .carousel-item img{
     height: 400px; 
-    object-fit: cover;
-    
+    object-fit: contain;    
   }
 
   .categoria-title-categoria{
@@ -304,10 +303,12 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    
   }
 
   .card-body button:hover{
     background-color: var(--azul-claro);
+    
 }
 
 /* Estilos para las secciones de categoría */

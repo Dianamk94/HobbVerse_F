@@ -1,3 +1,21 @@
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+}
+
+body {
+    background-color: #f8f9fa;
+}
 /* Checkout Page Styles */
 .checkout-header {
     margin-bottom: 2rem;
@@ -6,22 +24,22 @@
 .checkout-header h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    color: #0460D9;
+    color: var(--azul-primario);
     margin-bottom: 0.5rem;
 }
 
 .breadcrumb-item a {
-    color: #0460D9;
+    color: var(--naranja-primario);
     text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
-    color: #F28705;
+    color: var(--azul-primario);
     text-decoration: underline;
 }
 
 .breadcrumb-item.active {
-    color: #424769;
+    color: var(--azul-primario);
 }
 
 /* Card Styles */
@@ -39,7 +57,7 @@
 }
 
 .card-header {
-    background-color: #F28705 !important;
+    background-color: var(--azul-primario) !important;
     padding: 1rem 1.25rem;
     border-bottom: none;
 }
@@ -75,9 +93,9 @@
 }
 
 .address-card.selected {
-    border-color: #0460D9;
-    background-color: rgba(4, 96, 217, 0.05);
-    box-shadow: 0 0 0 1px #0460D9;
+    border-color: var(--amarillo-primario);
+    background-color: var(--curuba-claro);
+    box-shadow: none;
 }
 
 .address-details {
@@ -96,26 +114,26 @@
 }
 
 .form-check-input:checked {
-    background-color: #0460D9;
-    border-color: #0460D9;
+    background-color: var(--amarillo-primario);
+    border-color: var(--amarillo-primario);
 }
 
 .badge.bg-primary {
-    background-color: #0460D9 !important;
+    background-color: var(--amarillo-primario) !important;
     font-weight: 500;
     font-size: 0.7rem;
     padding: 0.35rem 0.5rem;
 }
 
 #add-address-btn {
-    color: #0460D9;
-    border-color: #0460D9;
+    color: var(--azul-primario);
+    border-color: var(--amzul-primario);
     transition: all 0.3s ease;
 }
 
 #add-address-btn:hover {
-    background-color: #0460D9;
-    border-color: #0460D9;
+    background-color: var(--azul-medio);
+    border-color: none;
     color: white;
 }
 
@@ -144,21 +162,21 @@
 
 .payment-form label {
     font-weight: 500;
-    color: #424769;
+    color: var(--azul-primario);    
     margin-bottom: 0.5rem;
 }
 
 .payment-form .form-control, 
 .payment-form .form-select {
-    border-color: #ced4da;
+    border-color: var(--azul-primario);
     padding: 0.5rem 0.75rem;
     transition: all 0.3s ease;
 }
 
 .payment-form .form-control:focus, 
 .payment-form .form-select:focus {
-    border-color: #0460D9;
-    box-shadow: 0 0 0 0.25rem rgba(4, 96, 217, 0.25);
+    border-color: var(--naranja-medio);
+    box-shadow: none;
 }
 
 .payment-form .input-group-text {
@@ -168,6 +186,8 @@
 }
 
 /* Order Summary */
+
+
 .checkout-product {
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -215,7 +235,7 @@
 }
 
 .checkout-totals .text-primary {
-    color: #0460D9 !important;
+    color: var(--naranja-primario) !important;
     font-weight: 700;
 }
 
@@ -229,7 +249,7 @@
 }
 
 .form-check-label a {
-    color: #0460D9;
+    color: var(--amarillo-primario);
     text-decoration: none;
 }
 
@@ -239,16 +259,16 @@
 }
 
 #complete-payment-btn {
-    background-color: #0460D9;
-    border-color: #0460D9;
+    background-color: var(--amarillo-primario);
+    border-color: var(--amarillo-primario);
     padding: 0.75rem 1.5rem;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 #complete-payment-btn:hover {
-    background-color: #034fb8;
-    border-color: #034fb8;
+    background-color: var(--amarillo-claro);
+    border-color: none;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(4, 96, 217, 0.3);
 }
@@ -280,7 +300,7 @@
 
 /* Modal Styles */
 .modal-header {
-    background-color: #F28705;
+    background-color: var(--azul-primario);
     color: white;
     border-bottom: none;
 }
@@ -296,12 +316,20 @@
 }
 
 .modal-body h6 {
-    color: #0460D9;
+    color: var(--amzul-primario) !important;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
+.form-label {
+    color: var(--azul-primario);
+}
+
+.form-control:focus {
+    border-color: var(--naranja-primario) !important;
+    box-shadow: none;
+}
 .modal-body h6:first-child {
     margin-top: 0;
 }
@@ -311,14 +339,22 @@
 }
 
 .modal-footer .btn-primary {
-    background-color: #0460D9;
-    border-color: #0460D9;
+    background-color: var(--azul-primario);
+    border-color: var(--azul-primario);
 }
 
+.modal-footer .btn-primary:hover {
+    background-color: var(--azul-medio);
+    border-color: none;
+} 
 .modal-footer .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: var(--amarillo-primario);
+    border-color: var(--amarillo-primario);
 }
+
+.modal-footer .btn-secondary:hover {
+    background-color: var(--amarillo-claro);
+    border-color: none;}
 
 /* Toast Notifications */
 .toast-container {

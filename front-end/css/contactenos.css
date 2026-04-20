@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Quicksand&display=swap');
 :root {
-    --site-dark-blue: #0460D9;
-    --site-blue: #0487D9;
-    --site-white: rgb(255, 255, 255);
-    --site-orange: #F28705;
-    --site-dark-orange: #f25c05;
+    --azul-primario: #8AC9CE;
+    --azul-medio: #A2D3D8;
+    --azul-claro: #BCDFE0;
+    --curuba-primario: #F5E39E;
+    --curuba-medio: #F8E9B8;
+    --curuba-claro: #F6EBCF;
+    --amarillo-primario: #EDB54B;
+    --amarillo-medio: #EEC16C;
+    --amarillo-claro: #F1D092;
+    --naranja-primario: #C67027;
+    --naranja-medio: #CA844E;
+    --naranja-claro: #C99973;
 
     --site-font-title: 'Poppins', sans-serif;
     --site-font-body: 'Josefin Sans', sans-serif;
@@ -29,17 +36,17 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(45deg, transparent, rgba(242, 92, 5, 0.414), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(4, 96, 217, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229031/Imagen_fondo_Banner_Contacto_dlrhnb.jpg');
+    background-image: linear-gradient(45deg, rgba(242, 92, 5, 0.603), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(44, 173, 212, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229031/Imagen_fondo_Banner_Contacto_dlrhnb.jpg');
 
 }
 .titulo-faq {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #F25C05;
+    color: var(--amarillo-medio);
     margin-bottom: 15px;
-    font-size: 70px;
-    text-shadow: 1.5px 1.5px 2px #f7ebeb;
+    font-size: 60px;
+     text-shadow: 1.5px 1.5px 2px #3f3f3f;
 }
 
 .faq-section {
@@ -70,8 +77,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--site-orange);
-    color: var(--site-white);
+    background: var(--azul-primario);
+    color: #fff;
     padding: 16px 24px;
     border-radius: 10px;
     cursor: pointer;
@@ -83,7 +90,7 @@ body {
 
 /* Efecto hover en la cabecera */
 .acordion-header:hover {
-    background: #e67e00;
+    background: var(--azul-medio);
 }
 
 .plus-icon {
@@ -124,13 +131,13 @@ body {
 /**Sección de contacto*/
 
 .contact{
-    background-color: var(--site-dark-blue);
+    background-color: var(--curuba-claro);
     padding: 40px;
     width: 100%;
 
 }
 .container-contact{
-    background-color:#F2F0E9;
+    background-color:var(--curuba-primario);
     padding: 60px;
     width: 50%;
     margin: 50px auto;
@@ -146,7 +153,7 @@ body {
     font-style: normal;
     text-align: center; 
     margin-bottom: 30px;
-    color: #0460D9;
+    color: var(--azul-primario);
 }
 
 /*Estilos para el input*/
@@ -155,30 +162,30 @@ body {
 width: 100%;                
 padding: 10px;               
 margin-bottom: 15px;       
-border: 1px solid #0460D9;             
+border: 1px solid var(--naranja-claro);             
 border-radius: 5px;      
 color: #333;                
 font-family: var(--site-font-body);
 }
 .container-contact input:focus {
     outline: none;
-    border-color: #F28705;
+    border-color: var(--azul-primario);
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
 }
 textarea:focus {
     outline: none;
-    border-color: #F28705;
+    border-color: var(--azul-primario);
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
 }
 
 .container-contact input::placeholder {
-    color: #0460D9;
+    color: var(--naranja-primario);
     font-size: 14px;
 }
 textarea::placeholder {
-    color: #0460D9;
+    color: var(--naranja-primario);
   }
 
 /*Estilos para el área de texto*/
@@ -192,7 +199,7 @@ width: 50%;
 padding: 10px;           
 border: none;              
 border-radius: 5px;        
-background-color: var(--site-orange);
+background-color: var(--azul-primario);
 color: white;                
 cursor: pointer; /* Cambiar el cursor al pasar el mouse */
 transition: background-color 0.3s; 
@@ -203,7 +210,7 @@ margin: 0 auto;
 
 /*Estilo para el boton al pasar el mouse*/
 .container-contact button:hover {
-background-color: var(--site-dark-orange); /*Fondo gris más claro al pasar el mouse */
+background-color: var(--azul-medio); /*Fondo gris más claro al pasar el mouse */
 }
 
 /*Estilos mensaje despues de dar click en el boton enviar*/

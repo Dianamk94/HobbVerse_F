@@ -1,3 +1,19 @@
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+}
+
+
 /* Estilos base */
 body {
   font-family: 'Josefin Sans', sans-serif;
@@ -14,7 +30,7 @@ body {
 }
 
 .mb-0{
-  color: rgba(4, 96, 217, 1);
+  color: var(--azul-primario);
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -23,7 +39,7 @@ body {
 
 /* Migas de pan */
 .breadcrumb-item a {
-  color: rgba(4, 96, 217, 0.8);
+  color: var(--naranja-primario);
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -45,6 +61,13 @@ body {
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0px 2px 8px rgba(4, 96, 217, 0.1);
   margin-bottom: 16px;
+}
+
+.title-precio {
+  color: var(--azul-primario);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 
@@ -74,15 +97,15 @@ body {
 }
 
 .product-title {
-  color: rgba(4, 135, 217, 1);
+  color: #000;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 0.5rem;
 }
 
 .product-price {
-  color: rgba(242, 135, 5, 1);
+  color: var(--naranja-primario);
   font-size: 16px;
   margin-bottom: 0.3rem;
 }
@@ -106,31 +129,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(4, 96, 217, 1);
-  border-color: rgba(4, 96, 217, 0.5);
+  color: var(--azul-primario);
+  border-color: var(--azul-primario);
   background-color: white;
 }
 
 .quantity-control .btn:hover {
-  background-color: rgba(4, 96, 217, 0.1);
+  background-color: var(--azul-medio);
+  color: white;
+  border: none;
 }
 
 .quantity-control .form-control {
   border-radius: 6px;
   text-align: center;
   font-weight: 500;
-  border-color: rgba(4, 96, 217, 0.3);
+  border-color: var(--azul-primario);
+}
+
+.quantity-control .form-control:focus {  
+  border-color: var(--naranja-primario);
+  box-shadow: none !important; 
 }
 
 /* Botones de acción */
 .btn-outline-primary {
-  color: rgba(4, 96, 217, 1);
-  border-color: rgba(4, 96, 217, 1);
+  color: var(--azul-primario) !important;
+  border-color: var(--azul-primario) !important;
 }
 
 .btn-outline-primary:hover {
-  background-color: rgba(4, 96, 217, 1);
-  color: white;
+  background-color: var(--azul-claro) !important;
+  color: white !important;
 }
 
 .btn-outline-danger {
@@ -171,13 +201,13 @@ body {
 }
 
 .order-summary .card-title {
-  color: rgba(4, 96, 217, 1);
+  color: var(--amarillo-primario);
   font-size: 22px;
   margin-bottom: 1.5rem;
 }
 
 .total-label, .total-amount {
-  color: rgba(242, 92, 5, 1);
+  color: var(--naranja-primario);
   font-weight: 700;
   font-size: 20px;
 }
@@ -185,24 +215,28 @@ body {
 /* Campos para cupón */
 .input-group .form-control {
   border-radius: 8px 0 0 8px;
-  border-color: rgba(4, 96, 217, 0.3);
+  border-color: var(--azul-primario)!important;
   font-family: 'Poppins', sans-serif;
 }
 
 .input-group .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(4, 96, 217, 0.25);
-  border-color: rgba(4, 96, 217, 0.5);
+  border-color: var(--naranja-primario)!important;
+  box-shadow: none !important; 
 }
 
 .input-group .btn-outline-secondary {
-  border-radius: 0 8px 8px 0;
-  border-color: rgba(4, 96, 217, 0.3);
-  color: rgba(4, 96, 217, 1);
-  background-color: white;
+   font-family: "Josefin Sans", sans-serif; 
+   font-weight: 600;   
+   border-radius: 0 8px 8px 0;
+   border-color: rgba(4, 96, 217, 0.3);
+   color: var(--azul-primario);
+   background-color: white;
 }
 
 .input-group .btn-outline-secondary:hover {
-  background-color: rgba(4, 96, 217, 0.1);
+  background-color: var(--azul-medio);
+  border: none;
 }
 
 /* Alertas de cupón */
@@ -242,8 +276,8 @@ body {
 
 /* Botón de checkout */
 .checkout-btn {
-  background-color: rgba(242, 92, 5, 1);
-  color: white;
+  background-color: var(--azul-primario) !important;
+  color: white!important;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -254,7 +288,7 @@ body {
 }
 
 .checkout-btn:hover {
-  background-color: rgba(220, 82, 4, 1);
+  background-color: var(--azul-medio) !important;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(242, 92, 5, 0.3);
@@ -268,7 +302,8 @@ body {
 }
 
 .payment-methods i:hover {
-  color: rgba(4, 96, 217, 1);
+  color: var(--amarillo-medio);
+  transform: scale(1.1);
 }
 
 /* Mensaje de carrito vacío */

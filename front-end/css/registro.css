@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Quicksand&display=swap');
-:root {
-    --site-dark-blue: #0460D9;
-    --site-blue: #0487D9;
-    --site-white: rgb(255, 255, 255);
-    --site-orange: #F28705;
-    --site-dark-orange: #f25c05;
+:root {    
+
+    --azul-primario: #8AC9CE;
+    --azul-medio: #A2D3D8;
+    --azul-claro: #BCDFE0;
+    --curuba-primario: #F5E39E;
+    --curuba-medio: #F8E9B8;
+    --curuba-claro: #F6EBCF;
+    --amarillo-primario: #EDB54B;
+    --amarillo-medio: #EEC16C;
+    --amarillo-claro: #F1D092;
+    --naranja-primario: #C67027;
+    --naranja-medio: #CA844E;
+    --naranja-claro: #C99973;
+
 
     --site-font-title: 'Poppins', sans-serif;
     --site-font-body: 'Josefin Sans', sans-serif;
@@ -38,7 +47,7 @@ body {
 }
 
 .card-register {
-    background-color: var(--site-white);
+    background-color: var(--curuba-claro);
     padding: 30px;         /* Menos padding */
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(21, 88, 212, 0.25);
@@ -68,12 +77,12 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-size: 25px;
-    color: var(--site-dark-blue);
+    color: var(--amarillo-primario);
 }
 
 
 .imgUser {
-    background-color: var(--site-dark-blue);
+    background-color: var(--amarillo-primario);
     border-radius: 50%;
     padding: 8px;
     margin-bottom: 8px;
@@ -93,7 +102,7 @@ body {
 .card-register input {
     width: 100%;
     padding: 8px;
-    border: 1px solid var(--site-dark-blue);
+    border: 1px solid var(--azul-primario);
     border-radius: 8px;
     font-family: var(--site-font-body);
     outline: none;
@@ -101,13 +110,13 @@ body {
 }
 .card-register input:focus {
     outline: none;
-    border-color: #F28705;
+    border-color: var(--naranja-primario);
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
 }
 
 .card-register input::placeholder {
-    color: var(--site-dark-blue);
+    color: var(--azul-primario);
     font-size: 14px; 
 }
 
@@ -115,9 +124,9 @@ body {
 .card-register button {
     width: 70%;
     padding: 8px;
-    background-color: var(--site-orange);
+    background-color: var(--azul-primario);
     color: var(--site-white);
-    border: solid;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
@@ -128,7 +137,7 @@ body {
 }
 
 .card-register button:hover {
-    background-color: var(--site-dark-orange);
+    background-color: var(--azul-medio);
 }
 
 
@@ -144,12 +153,13 @@ body {
 }
 
 .card-register a {
-    color: var(--site-blue);
+    color: var(--amarillo-primario);
     text-decoration: none;
     font-weight: bold;
 }
 
 .card-register a:hover {
+    color: var(--naranja-primario);
     text-decoration: underline;
 }
 
@@ -177,7 +187,7 @@ p.error-message {
     font-size: 50px;
     font-family: var(--site-font-title);
     text-align: center;
-    color: var(--site-dark-orange);
+    color: var(--azul-primario);
 }
 
 .titulo2{
@@ -191,7 +201,7 @@ p.error-message {
     font-size: 40px;
     font-family: var(--site-font-title);
     text-align: center;
-    color: var(--site-dark-orange);
+    color: var(--azul-primario);
 
 }
 
@@ -234,7 +244,7 @@ p.error-message {
 }
 
 .password-toggle:hover {
-    color: #0460D9;
+    color: var(--amarillo-primario);
 }
 
 .password-toggle i {

@@ -1,3 +1,19 @@
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +56,7 @@ footer {
     padding: 20px;
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+   margin-bottom: 20px;
     padding: 0 1rem;
 }
 
@@ -72,7 +88,7 @@ footer {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #f25c05;
+    color: var(--azul-primario);
     text-align: center;
 
 }
@@ -89,12 +105,12 @@ footer {
     font-weight: 500;
     font-style: normal;
     font-size: 25px;
-    color: #0460D9;
+    color: var(--amarillo-primario);
     
 }
 
 .imgUser {
-    background-color: #0460D9;
+    background-color: var(--amarillo-primario);
     border-radius: 50%;
     padding: 8px;
     margin-bottom: 8px;
@@ -106,7 +122,7 @@ footer {
 }
 
 .card-login {
-    background-color: #ffffff;
+    background-color: var(--curuba-claro);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -128,7 +144,7 @@ footer {
     width: 100%;
     padding: 12px 16px;
     margin-bottom: 10px;    
-    border: 1px solid #0460D9;
+    border: 1px solid var(--azul-primario);
     border-radius: 8px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -141,13 +157,13 @@ footer {
 
 .card-login input:focus {
     outline: none;
-    border-color: #F28705;
+    border-color: var(--naranja-primario);
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
 }
 
 .card-login input::placeholder {
-    color: #0460D9;
+    color: var(--azul-primario);
     font-size: 14px;
 }
 
@@ -169,7 +185,7 @@ footer {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
-    background: linear-gradient(135deg, #F28705, #d9801a);
+    background: var(--azul-primario);
     color: white;
     border: none;
     border-radius: 8px;
@@ -180,7 +196,7 @@ footer {
 }
 
 .card-login button:hover {
-    background: #F25C05;
+    background: var(--azul-medio);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(242, 135, 5, 0.2);
 }
@@ -197,7 +213,7 @@ footer {
 }
 
 .card-login a {
-    color: #F28705;
+    color: var(--amarillo-primario);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -260,7 +276,7 @@ footer {
 }
 
 .password-toggle:hover {
-    color: #0460D9;
+    color: var(--azul-primario);
 }
 
 .password-toggle i {

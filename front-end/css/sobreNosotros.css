@@ -1,12 +1,17 @@
-/* Paleta de Colores
-Azul Oscuro #0460D9
-Azul más claro #0487D9
-Blanco hueso  #F2F0E9
-Naranja claro #F28705
-Naranja Oscuro #F25C05
-
-*/
-
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+}
 
 /* Fuente Poppins
     font-family: "Poppins", sans-serif;
@@ -40,7 +45,7 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(45deg, rgba(242, 92, 5, 0.414), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(4, 96, 217, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229039/Imagen_fondo_Banner_SobreNosotros_qhdyfv.jpg');
+    background-image: linear-gradient(45deg, rgba(242, 92, 5, 0.603), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(44, 173, 212, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229039/Imagen_fondo_Banner_SobreNosotros_qhdyfv.jpg');
 }
 
 .content-Banner h1{
@@ -48,10 +53,10 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #F25C05;
+    color: var(--amarillo-medio);
     margin-bottom: 15px;
-    font-size: 70px;
-    text-shadow: 1.5px 1.5px 2px #f7ebeb;
+    font-size: 60px;
+    text-shadow: 1.5px 1.5px 2px #3f3f3f;
     
 }
 
@@ -60,7 +65,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: #fdfdfd;
     text-shadow: 1px 1px 2px #454545;
@@ -121,7 +126,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #0460D9;
+    color: var(--azul-primario);
     margin-bottom: 15px;
     font-size: 50px;
     text-align: center;
@@ -174,7 +179,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #F28705;
+    color: var(--naranja-primario);
     margin-bottom: 15px;
     font-size: 50px;
     text-align: center;
@@ -231,7 +236,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #0460D9;
+    color: var(--azul-primario);
     margin-bottom: 15px;
     font-size: 50px;
     text-align: center;
@@ -254,7 +259,7 @@ body{
 
 .content-Equipo {
     padding: 40px;
-    background-color:  #0487D9;
+    background-color:  var(--curuba-claro);
     text-align: center;
 }
 
@@ -263,7 +268,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 60px;
     margin-bottom: 40px;
-    color: #F2F0E9;
+    color: var(--azul-primario);
 }
 
 /* Contenedor de fichas en grid */
@@ -288,7 +293,7 @@ body{
 
 /* Ficha individual */
 .ficha-Persona {
-    background-color: #F28705;    
+    background-color: var(--azul-primario);    
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -322,7 +327,7 @@ body{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #0460D9;
+    color: var(--curuba-medio);
     
 }
 
@@ -340,9 +345,9 @@ body{
 .ficha-Persona p {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.5;
 }
 

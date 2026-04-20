@@ -1,3 +1,19 @@
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+}
+
+
 #discover {
     display: flex;
     flex-direction: column;
@@ -9,17 +25,17 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(45deg, transparent, rgba(242, 92, 5, 0.414), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(4, 96, 217, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229031/Imagen_fondo_Banner_Productos_owfsyx.jpg');
+    background-image: linear-gradient(45deg, rgba(242, 92, 5, 0.603), rgba(242, 135, 5, 0.478), rgba(4, 135, 217, 0.467), rgba(44, 173, 212, 0.443)), url('https://res.cloudinary.com/diljcypxv/image/upload/v1749229031/Imagen_fondo_Banner_Productos_owfsyx.jpg');
 }
 
 #discover h1 {
    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #F25C05;
+    color: var(--amarillo-medio);
     margin-bottom: 15px;
-    font-size: 70px;
-    text-shadow: 1.5px 1.5px 2px #f7ebeb;
+    font-size: 60px;
+    text-shadow: 1.5px 1.5px 2px #3f3f3f;
 }
 
 #discover-subtitle {
@@ -27,7 +43,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: #fdfdfd;
     text-shadow: 1px 1px 2px #454545;
@@ -59,45 +75,50 @@
 }
 
 .hobbie:hover {
-    background-color: #fce8d8;
+    background-color: var(--curuba-medio);
+    color: var(--naranja-primario);
     transform: translateY(-3px);
 }
 
 .hobbiea {
     text-decoration: none;
-    color: #f25c05;
+    color: var(--azul-primario);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     transition: color 0.3s ease;
+    padding-left: 6px;
 }
 
+#hobbieSelected {
+    margin: 20px;
+}
 .hobbiea.selected {
     color: #0460D9;
 }
 
 .hobbie i {
     font-size: 20px;
-    color: #f25c05;
+    color: var(--amarillo-primario);
 }
 
 .hobbiea:hover:not(.selected) {
-    color: #f28705;
+    color: var(--amarillo-primario);
     transform: scale(1.05);
 }
 
 .hobbiea.selected {
-    color: #0460D9;
+    color: var(--amarillo-primario);
     font-weight: 800;
-    border-bottom: 2px solid #0460D9;
+    border-bottom: 2px solid var(--amarillo-primario);
 }
 
 #iconSelected {
-    color: #F28705;
+    color: var(--amarillo-primario);
     font-size: 24px;
 }
 
 .hobbieaSelected {
-    color: #0460D9;
+    color: var(--azul-primario);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -173,7 +194,7 @@
     margin: 0 0 10px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #222;
+    color: var(--naranja-primario);
     text-align: center;
 }
 
@@ -192,7 +213,7 @@
 .producto-card .price {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #f25c05;
+    color: var(--naranja-primario);
     margin: 10px 0;
     text-align: center;
 }
@@ -202,10 +223,10 @@
     min-width: 120px;
     margin: 10px auto 0;
     padding: 10px 20px;
-    background: #f25c05;
+    background: var(--azul-primario);
     color: #fff;
-    border: 2px solid #d94f04;
-    border-radius: 30px;
+    border: none;
+    border-radius: 10px;
     font-size: 0.9rem;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
@@ -213,19 +234,6 @@
     transition: all 0.3s ease;
 }
 
-.buy-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: transform 0.6s ease;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: 0;
-}
 
 .buy-button:hover::before {
     transform: translate(-50%, -50%) scale(1);
@@ -234,11 +242,11 @@
 .buy-button:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background: #e55000;
+    background: var(--azul-claro);
 }
 
 .producto-card.featured {
-    border: 2px solid #ffc107;
+    border: 2px solid var(--curuba-primario);
     box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
 }
 

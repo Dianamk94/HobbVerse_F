@@ -156,16 +156,16 @@
 
 .mobile-menu-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #f25c05;
+    color: var(--azul-primario);
 }
 
 .custom-icon-color {
-  color: #0460D9;  
+  color: var(--amarillo-claro);  
 }
 /* Estilos para el botón de perfil */
 .user-profile .dropdown-toggle {
     color: #F5F5F5 !important;
-    background-color: #F28705 !important;
+    background-color: var(--azul-primario) !important;
     border: none;
     width: 200px;
     border-radius: 20px;
@@ -177,7 +177,7 @@
 }
 
 .user-profile .dropdown-toggle:hover {
-    background-color: #f25c05;    
+    background-color: var(--azul-medio) !important;    
     transform: translateY(-2px);
 }
 
@@ -203,13 +203,18 @@
 }
 
 .user-profile .dropdown-item:hover {
-    background-color: #F6B17A;
+    background-color: var(--amarillo-claro);
     color: #F5F5F5;  
 }
 
 
 .user-profile .dropdown-divider {
     border-color: rgba(62, 69, 110, 0.1);
+}
+
+.user-name {
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--curuba-claro);
 }
 
 /* Versión móvil del botón de perfil */
