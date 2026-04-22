@@ -11,6 +11,8 @@
   --naranja-primario: #C67027;
   --naranja-medio: #CA844E;
   --naranja-claro: #C99973;
+  --texto-form: #504f4f;
+  --fondo-blanco: #f0eeee;
 }
 
 
@@ -22,6 +24,10 @@
     background-color: #F2F0E9;
   }
   
+.container {
+  background-color:var(--fondo-blanco);
+}
+
   .TituloForm {
      display: flex;
     flex-direction: column;
@@ -108,7 +114,7 @@
   }
 
   .input-group input::placeholder {
-    color: var(--azul-primario);
+    color: var(--texto-form);
   }
   
   
@@ -124,7 +130,7 @@
   } 
 
   textarea::placeholder {
-    color: var(--azul-primario);
+    color: var(--texto-form);
   }
 
   input:focus ,textarea:focus{

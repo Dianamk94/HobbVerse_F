@@ -11,6 +11,7 @@
   --naranja-primario: #C67027;
   --naranja-medio: #CA844E;
   --naranja-claro: #C99973;
+  --fondo-blanco: #f0eeee;
 }
 
 
@@ -53,6 +54,7 @@
 
 #category-bar {
     padding-top: 20px;
+    background-color: var(--fondo-blanco);
 }
 
 #category-list {
@@ -98,7 +100,7 @@
 
 .hobbie i {
     font-size: 20px;
-    color: var(--amarillo-primario);
+    color: var(--azul-primario);
 }
 
 .hobbiea:hover:not(.selected) {
@@ -118,11 +120,15 @@
 }
 
 .hobbieaSelected {
-    color: var(--azul-primario);
+    color: #000;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 30px;
+}
+
+#iconSelected {
+    color: #000;
 }
 
 .hobbie i {
@@ -159,6 +165,8 @@
     padding: 0 40px;
 }
 
+/* ----------Card productos-------------  */
+
 .producto-card {
     display: flex;
     flex-direction: column;
@@ -194,7 +202,8 @@
     margin: 0 0 10px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--naranja-primario);
+    color: #000;
+    font-style: bold;
     text-align: center;
 }
 

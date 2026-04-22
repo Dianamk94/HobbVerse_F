@@ -1,4 +1,5 @@
 :root {
+  --fondo-blanco: #f0eeee;
   --azul-primario: #8AC9CE;
   --azul-medio: #A2D3D8;
   --azul-claro: #BCDFE0;
@@ -14,9 +15,14 @@
 }
 
 
+
+.container-fluid {
+    background-color: var(--fondo-blanco);
+}
+
 /* Estilos Base del Perfil */
 .profile-sidebar {
-    background: var(--curuba-claro);
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(223, 121, 3, 0.876);
     transition: all 0.3s ease;
@@ -27,12 +33,12 @@
 }
 
 .profile-image {    
-    color: var(--amarillo-primario);
+    color: var(--azul-claro);
 }
 
 .perfil-icon {
     font-size: 80px; 
-    color: var(--amarillo-primario);   
+    color: var(--azul-claro);   
 }
 
 .star-icon {
@@ -43,8 +49,8 @@
 .user-name {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
-    color: var(--amarillo-primario);
+    color: var(--curuba-primario)!important;
+    font-style: normal;    
     margin-top: 0.5rem;
 }
 

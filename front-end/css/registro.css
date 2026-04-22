@@ -13,6 +13,7 @@
     --naranja-primario: #C67027;
     --naranja-medio: #CA844E;
     --naranja-claro: #C99973;
+    --texto-form: #504f4f;
 
 
     --site-font-title: 'Poppins', sans-serif;
@@ -23,7 +24,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--site-white);
+    background-color: #fcf9f9;
 }
 
 
@@ -47,7 +48,7 @@ body {
 }
 
 .card-register {
-    background-color: var(--curuba-claro);
+    background-color: #fff;
     padding: 30px;         /* Menos padding */
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(21, 88, 212, 0.25);
@@ -77,12 +78,12 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-size: 25px;
-    color: var(--amarillo-primario);
+    color: #000;
 }
 
 
 .imgUser {
-    background-color: var(--amarillo-primario);
+    background-color: var(--azul-claro);
     border-radius: 50%;
     padding: 8px;
     margin-bottom: 8px;
@@ -111,12 +112,12 @@ body {
 .card-register input:focus {
     outline: none;
     border-color: var(--naranja-primario);
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
 }
 
 .card-register input::placeholder {
-    color: var(--azul-primario);
+    color: var(--texto-form);
     font-size: 14px; 
 }
 
@@ -138,6 +139,7 @@ body {
 
 .card-register button:hover {
     background-color: var(--azul-medio);
+    color: var(--site-white) !important;
 }
 
 

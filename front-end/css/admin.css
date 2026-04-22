@@ -1,3 +1,24 @@
+:root {
+  --azul-primario: #8AC9CE;
+  --azul-medio: #A2D3D8;
+  --azul-claro: #BCDFE0;
+  --curuba-primario: #F5E39E;
+  --curuba-medio: #F8E9B8;
+  --curuba-claro: #F6EBCF;
+  --amarillo-primario: #EDB54B;
+  --amarillo-medio: #EEC16C;
+  --amarillo-claro: #F1D092;
+  --naranja-primario: #C67027;
+  --naranja-medio: #CA844E;
+  --naranja-claro: #C99973;
+  --fondo-blanco: #f0eeee;
+  --texto-form: #504f4f;
+}
+
+.container {
+    background-color: var(--fondo-blanco);
+}
+
 /* Estilos para las minitarjetas de productos */
 .card {
     border-radius: 12px !important;
@@ -6,14 +27,14 @@
 }
 
 .card-header {
-    background: linear-gradient(135deg, #ff8f00 0%, #ff6f00 100%);
+    background: var(--azul-primario) !important;
     color: white;
     border-radius: 12px 12px 0 0 !important;
 }
 
 .custom-add-btn {
-    background-color: #0460D9 !important;
-    color: #F5F5F5 !important;
+    background-color: #fdfdfd !important;
+    color: var(--azul-primario) !important;
     border: none !important;
     width: 50px !important;
     padding: 6px 10px;
@@ -22,7 +43,7 @@
 }
 
 .custom-add-btn:hover {
-    background-color: #0487D9 !important;
+    background-color: var(--curuba-claro) !important;
     color: #FFF;
 }
 
@@ -145,7 +166,7 @@
 }
 
 #categoryList {
-    color: #0460D9;
+    color: #000;
 }
 
 /* CORRECCIÓN: Botones de categoría más pequeños y mejor espaciados */
@@ -222,25 +243,25 @@
 
 /* Inputs y controles */
 .form-control, .form-select {
-    border: 1px solid #0460D9 !important;
+    border: 1px solid var(--azul-claro) !important;
     border-radius: 8px;
-    color: #0460D9 !important;
+    color: var(--texto-form) !important;
     padding: 0.625rem 1rem;
     font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
 .form-control:focus, .form-select:focus {
-    border-color: #F28705 !important;
+    border-color: var(--naranja-primario) !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 143, 0, 0.25) !important;
 }
 
 .form-control::placeholder {
-    color: #0460d9cf !important;
+    color: var(--texto-form) !important;
     font-size: 1rem !important;
 }
 .form-select::placeholder {
-    color: #0460d9cf !important;
+    color: var(--texto-form)!important;
     font-size: 0.9rem !important;
 }
 
@@ -278,7 +299,7 @@
     padding: 10px;
     font-size: 18px;
     color: #f5f5f5;
-    background-color: #0460D9;
+    background-color: var(--azul-primario);
     border: none;
     border-radius: 12px;
     gap: 12px;
@@ -287,7 +308,7 @@
 }
 
 #uploadImageBtn:hover{
-    background-color: #F28705;
+    background-color: var(--azul-medio);
 }
 
 #uploadMultipleBtn{
@@ -300,14 +321,14 @@
     padding: 10px !important;
     font-size: 18px !important;
     color: #f5f5f5;
-    background-color: #0460D9;
+    background-color: var(--azul-primario);
     border: none;
     border-radius: 12px;
     gap: 12px;
     margin-top: 5px !important;
 }
 #uploadMultipleBtn:hover{
-    background-color: #F28705;
+    background-color: var(--azul-medio);
 }
 
 .custom-elimnar-img{
@@ -339,7 +360,7 @@
     padding: 10px !important;
     font-size: 30px !important;
     color: #f5f5f5 !important;
-    background-color: #F28705 !important;
+    background-color: var(--amarillo-primario) !important;
     border: none;
     border-radius: 12px !important;
     gap: 12px;
@@ -347,7 +368,7 @@
 }
 
 .custom-btn-publicar:hover{
-    background-color: #0460D9 !important;
+    background-color: var(--amarillo-claro) !important;
 }
 
 /* Estilo para el switch de producto destacado */

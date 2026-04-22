@@ -11,6 +11,7 @@
   --naranja-primario: #C67027;
   --naranja-medio: #CA844E;
   --naranja-claro: #C99973;
+  --fondo-blanco: #f0eeee;
 }
 
 /* Fuente Poppins
@@ -81,7 +82,8 @@ body{
     
     display: flex;
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    background-color: var(--fondo-blanco); 
     gap: 40px;
     padding: 40px;
     height: 620px;

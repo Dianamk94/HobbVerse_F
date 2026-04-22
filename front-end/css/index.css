@@ -25,10 +25,11 @@
   --naranja-primario: #C67027;
   --naranja-medio: #CA844E;
   --naranja-claro: #C99973;
+  --fondo-blanco: #f0eeee;
 }
 
 body{
-    background-color: #F2F0E9;
+    background-color: #fffefd;
     margin: 0;
 }
 
@@ -99,9 +100,10 @@ body{
 /*----------------- Estilos Sección Explora Hobbies ----------------*/
 
 .content-explora-Hobbies{
-  height: 600px;
+    height: 600px;
     text-align: center;
     padding: 30px;
+    background-color: var(--fondo-blanco);
 }
 
 .search-input {
@@ -236,7 +238,7 @@ body{
 
   .carousel-control-prev-icon,.carousel-control-next-icon{
     
-    background-color: var(--naranja-primario);
+    background-color: #d6cccc;
     border-radius: 50%;
   
 }
@@ -255,7 +257,8 @@ body{
     font-weight: 600;
     margin: auto;
     padding: 6px;
-    background-color: var(--azul-primario);
+    background-color: var(--azul-claro);
+    color: #fff;
     border-radius: 12px;
   }
 
@@ -270,7 +273,7 @@ body{
     font-weight: 700;
     text-align: left;
     font-style: normal;
-    color: var(--amarillo-medio);    
+    color: #000;    
     font-size: 30px;    
     margin-left: 1rem;
     padding-left: 1rem;
@@ -284,7 +287,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: var(--naranja-primario);
+    color: #000;
   }
 
   .product-card p{
@@ -351,6 +354,7 @@ body{
 .content-clientes{
     text-align: center;
     padding: 30px;
+    background-color: var(--fondo-blanco);
 }
 
 .content-clientes h2{
@@ -422,8 +426,8 @@ body{
 }
 
 .flip-card-back {
-  background-color: var(--naranja-primario);
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;

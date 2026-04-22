@@ -12,6 +12,8 @@
     --naranja-primario: #C67027;
     --naranja-medio: #CA844E;
     --naranja-claro: #C99973;
+    --texto-form: #504f4f;
+    --fondo-blanco: #f0eeee;
 
     --site-font-title: 'Poppins', sans-serif;
     --site-font-body: 'Josefin Sans', sans-serif;
@@ -62,6 +64,7 @@ body {
     margin: 100px auto;
     padding: 20px 0;    
     width: 70%;
+    background-color: var(--fondo-blanco);
 }
 
 .acordion-item {
@@ -128,7 +131,7 @@ body {
 
 
 
-/**Sección de contacto*/
+/**----------------Sección de contacto------------*/
 
 .contact{
     background-color: var(--curuba-claro);
@@ -137,7 +140,7 @@ body {
 
 }
 .container-contact{
-    background-color:var(--curuba-primario);
+    background-color:#fff;
     padding: 60px;
     width: 50%;
     margin: 50px auto;
@@ -162,7 +165,7 @@ body {
 width: 100%;                
 padding: 10px;               
 margin-bottom: 15px;       
-border: 1px solid var(--naranja-claro);             
+border: 1px solid var(--azul-claro);             
 border-radius: 5px;      
 color: #333;                
 font-family: var(--site-font-body);
@@ -181,11 +184,11 @@ textarea:focus {
 }
 
 .container-contact input::placeholder {
-    color: var(--naranja-primario);
+    color: var(--texto-form);
     font-size: 14px;
 }
 textarea::placeholder {
-    color: var(--naranja-primario);
+    color: var(--texto-form);
   }
 
 /*Estilos para el área de texto*/
@@ -193,6 +196,7 @@ textarea::placeholder {
 resize: vertical;          
 height: 120px;             
 }
+
 
 .container-contact button {
 width: 50%;            
