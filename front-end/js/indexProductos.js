@@ -304,6 +304,63 @@ async function cargarProductos() {
                         'https://i.postimg.cc/5tmLM7kR/HV-Producto-8-3.png'
                     ],
                     featured: true
+                },
+
+                // Libros
+                {
+                    id: 17,
+                    name: 'Kindle Paperwhite 11va Generación',
+                    category: 'Lectura',
+                    description: 'Memoria interna de 16 GB. Lleva tus libros favoritos en un solo lugar y a todos lados.',
+                    price: 919900,
+                    stock: 30,
+                    mainImage: 'https://http2.mlstatic.com/D_NQ_NP_942394-MLU72636581981_112023-O.webp',
+                    additionalImages: [
+                        'https://http2.mlstatic.com/D_NQ_NP_839690-MLU69802065251_062023-O.webp'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 18,
+                    name: 'Cien años de Soledad',
+                    category: 'Lectura',
+                    description: 'Hermosa edición de colección de editorial Debolsillo',
+                    price: 120000,
+                    stock: 2,
+                    mainImage: 'https://panamericana.vtexassets.com/arquivos/ids/560683-1200-auto?v=638657492165670000&width=1200&height=auto&aspect=trueiburu',
+                    additionalImages: [
+                        'https://www.penguinlibros.com/es/7292341-large_default/cien-anos-de-soledad-edicion-especial-en-tapa-dura.webp'
+                        
+                    ],
+                    featured: true
+                },
+                {
+                    id: 19,
+                    name: 'caroline',
+                    category: 'Lectura',
+                    description: 'Acompaña a Coraline y dejate transportar al mundo de fantasía y terror creado por el premiado autor Neil Gaiman.',
+                    price: 62800,
+                    stock: 1,
+                    mainImage: 'https://imagessl2.casadellibro.com/a/l/s7/72/9788498382372.webp',
+                    additionalImages: [
+                        'https://imagessl6.casadellibro.com/a/l/adic/mc/s7/72/9788498382372-6.webp',
+                        'https://imagessl5.casadellibro.com/a/l/adic/mc/s7/72/9788498382372-5.webp'
+                    ],
+                    featured: true
+                },
+                {
+                    id: 20,
+                    name: 'Book set Saga Mistborn',
+                    category: 'Lectura',
+                    description: '7 libros de la saga Mistborn de Brandon Sanderson',
+                    price: 580000,
+                    stock: 42,
+                    mainImage: 'https://i.postimg.cc/k41S2VCN/HV-Producto-2-1.png',
+                    additionalImages: [
+                        'https://i.postimg.cc/QVLH71y7/HV-Producto-2-2.png',
+                        'https://i.postimg.cc/Vv2bF3dd/HV-Producto-2-3.png'
+                    ],
+                    featured: true
                 }
             ];
             
